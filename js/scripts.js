@@ -14,4 +14,12 @@ var revstring = function(str,usrresp) {
   return usrresp + joinArray;
 };
 
-alert(revstring(lastfirst,usrresp));
+var midchar = function(str) {
+  var sength = Math.round((str.length) / 2);
+  return str.charAt(sength);
+};
+//alert(midchar(usrresp));
+
+alert(midchar(usrresp) + usrresp + lastfirst.charAt(1) + lastfirst.charAt( 0 ));
+
+//alert(revstring(lastfirst,usrresp));

@@ -7,11 +7,11 @@ return (respstring.charAt( 0 ) + respstring.charAt(respstring.length - 1));
 
 var lastfirst = (firstlast(usrresp).toUpperCase());
 
-var revstring = function(str) {
+var revstring = function(str,usrresp) {
   var splitstr = str.split("");
   var reverseArray = splitstr.reverse();
   var joinArray = reverseArray.join("");
-  return joinArray;
+  return usrresp + joinArray;
 };
 
-alert(revstring(lastfirst));
+alert(revstring(lastfirst,usrresp));
